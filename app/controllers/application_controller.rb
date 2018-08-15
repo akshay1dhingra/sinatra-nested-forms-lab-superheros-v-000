@@ -9,7 +9,9 @@ class App < Sinatra::Base
     end
 
     get '/teams' do
-      
+      binding.pry
+      @team = Team.new(params[:team][:name], )
+
     end
 
 end
