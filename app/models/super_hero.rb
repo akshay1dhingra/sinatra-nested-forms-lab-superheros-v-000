@@ -1,9 +1,11 @@
-class SuperHero 
+class SuperHero
 
   attr_reader :name, :power, :bio
 
   HEROES = []
 
-  initialize(name, power, bio)
+  def initialize(name, power, bio)
+
+  end
 
 end
