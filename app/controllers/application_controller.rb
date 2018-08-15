@@ -13,7 +13,7 @@ class App < Sinatra::Base
       binding.pry
       @team = Team.new(params[:team][:name], params[:team][:motto])
       members = params[:team][:members]
-      @super_heroes = members.collect |member_data| do 
+      @super_heroes = members.collect do |member_data|
         SuperHero.new(params[:name], params[:power], params[:bio])
       end 
       erb :team
