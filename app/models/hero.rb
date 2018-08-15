@@ -1,3 +1,3 @@
-class Hero < ActiveRecord::Base
-  belongs_to :team
+class SuperHero
+
 end
