@@ -8,6 +8,7 @@ class SuperHero
     @name = params[:name]
     @power = params[:power]
     @bio = params[:bio]
+    SUPERHEROS << self
   end
 
 end
