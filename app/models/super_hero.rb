@@ -4,7 +4,7 @@ class SuperHero
 
   SUPERHEROS = []
 
-  def initialize(params)
+  def initialize(name, power, bio)
     @name = params[:name]
     @power = params[:power]
     @bio = params[:bio]
