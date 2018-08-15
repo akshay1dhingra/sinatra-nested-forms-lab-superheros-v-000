@@ -9,7 +9,7 @@ class App < Sinatra::Base
       erb :super_hero
     end
 
-    get '/teams' do
+    get '/team' do
       binding.pry
       @team = Team.new(name: params[:team][:name], motto: params[:team][:motto])
       members = params[:team][:members]
