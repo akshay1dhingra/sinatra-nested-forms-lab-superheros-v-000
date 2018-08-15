@@ -14,7 +14,7 @@ class App < Sinatra::Base
       @team = Team.new(params[:team][:name], params[:team][:motto])
       members = params[:team][:members]
       @super_heroes = members.collect do |member_data|
-        SuperHero.new(params[:name], params[:power], params[:bio])
+        SuperHero.new(member_data[:name], member_data[:power], member_data[:bio])
       end
       erb :team
     end
