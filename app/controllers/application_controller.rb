@@ -11,7 +11,7 @@ class App < Sinatra::Base
 
     get '/teams' do
       binding.pry
-      @team = Team.new(name: params[:team][:name], params[:team][:motto])
+      @team = Team.new(name: params[:team][:name], motto: params[:team][:motto])
       members = params[:team][:members]
       @super_heroes = members.collect do |member_data|
         SuperHero.new(params[:name], params[:power], params[:bio])
